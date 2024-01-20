@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style.css" />
+    <title>Panda</title>
+    <script
+      src="https://kit.fontawesome.com/152b3d02b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <div class="left-bar">
+          <a href="#" class="navbar-links">
+            <i class="fa-solid fa-paw icon"></i>
+            PANDASTIC</a
+          >
+        </div>
+        <nav class="right-bar">
+          <div class="dropdown">
+            <a href="#" class="dropdown navbar-links">
+              SOCIALS <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a
+                href="#"
+                class="drop-links"
+                onclick="alert('pfft who has time for instagram')"
+                >Instagram <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" onclick="alert('As if')" class="drop-links"
+                >TikTok <i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a
+                href="#"
+                class="drop-links"
+                onclick="alert('Can you imagine! Thx tho')"
+                >Paypal <i class="fa-brands fa-paypal"></i
+              ></a>
+            </div>
+          </div>
+
+          <a href="#wiki" class="navbar-links">Wiki</a>
+
+          <a href="#quiz" class="navbar-links">Quiz</a>
+
+          <a href="#" class="navbar-links" onclick="alert('dummy link')"
+            >About</a
+          >
+        </nav>
+        <!-- added onclicks for fun since I have nowhere to direct  -->
+      </header>
+
+      <section class="showcase">
+        <div>
+          <h1>Giant Panda</h1>
+          <p>Pandas are the most adorable among the animals.</p>
+        </div>
+      </section>
+
+      <section class="wiki-panda" id="wiki">
+        <nav class="wiki-left">
+          <button class="wiki-buttons" onclick="changeWiki(0)">
+            Introduction
+          </button>
+          <button class="wiki-buttons" onclick="changeWiki(1)">
+            Classification
+          </button>
+          <button class="wiki-buttons" onclick="changeWiki(2)">
+            Subspecies
+          </button>
+          <button class="wiki-buttons" onclick="changeWiki(3)">
+            Description
+          </button>
+          <button class="wiki-buttons" onclick="changeWiki(4)">Diet</button>
+          <button class="wiki-buttons" onclick="changeWiki(5)">Behavior</button>
+        </nav>
+        <div class="wiki-right"></div>
+      </section>
+
+      <section class="cards">
+        <div class="slideshow">
+          <button class="slide-left" onclick="changeImage('previous')">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <div class="slideshow-circles"></div>
+          <button class="slide-right" onclick="changeImage('next')">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="donation">
+          <div class="photo"></div>
+          <button
+            class="donate-btn"
+            onclick="alert('(Donate) imagine this link actually went somewhere;')"
+          >
+            Donate For Environment Now
+          </button>
+        </div>
+
+        <div class="quiz" id="quiz">
+          <h3>Panda Quiz</h3>
+          <p class="question 2"></p>
+          <div class="answers"></div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footerP">Made by yours truly for HYF.</div>
+        <!-- added onclicks for fun since I have nowhere to direct  -->
+        <div class="social-media">
+          <a class="logo" onclick="alert('pfft who has time for instagram')"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="logo" onclick="alert('As if')">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a class="logo" onclick="alert('Can you imagine! Thx tho')">
+            <i class="fa-brands fa-paypal"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="./Script.js"></script>
+</html>
